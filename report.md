@@ -4,7 +4,7 @@
 
 본 프로젝트에서는 사전 학습된 **ResNet50**모델을 사용하여 Transfer Learning 기법으로 정확도를 향상시켰습니다. 기존 ResNet50 모델 FC Layer를 추가해 학습하였고, Activation으로 softmax를 사용해 10개의 class로 분류하도록 커스터마이징 한 모델을 사용했습니다.
 
-![model.png](https://github.com/yesjuhee/image-classification/images/model.png)
+![model.png](https://github.com/yesjuhee/image-classification/blob/main/images/model.png)
 
 ### **Feature Extraction**
 
@@ -61,13 +61,13 @@ model = tf.keras.Sequential([
 
 ### 4.1 Feature Extraction
 
-![feature-extraction.png](https://github.com/yesjuhee/image-classification/images/feature-extraction.png)
+![feature-extraction.png](https://github.com/yesjuhee/image-classification/blob/main/images/feature-extraction.png)
 
 Feature Extraction 단계에서는 11번의 epoch가 진행되었습니다. Training accuracy 0.9256, validation accuracy 0.9183에서 중단되었습니다.
 
 ### 4.2 Fine-Tuning
 
-![fine-tuning.png](https://github.com/yesjuhee/image-classification/images/fine-tuning.png)
+![fine-tuning.png](https://github.com/yesjuhee/image-classification/blob/main/images/fine-tuning.png)
 
 Fine Tuning 단계에서는 12번의 epoch가 진행되었습니다. Training accuracy 0.9791, validation accuracy 0.9609에서 중단되었습니다.
 
